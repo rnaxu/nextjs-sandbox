@@ -1,7 +1,7 @@
-import React from 'react';
-import './button.css';
+import classNames from 'classnames';
+import styles from './Button.module.css';
 
-interface ButtonProps {
+type ButtonProps = {
   /**
    * Is this the principal call to action on the page?
    */
@@ -19,6 +19,10 @@ interface ButtonProps {
    */
   label: string;
   /**
+   * Class attribute
+   */
+  className?: string;
+  /**
    * Optional click handler
    */
   onClick?: () => void;
@@ -27,26 +31,25 @@ interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({
+const Button = ({
   primary = false,
   size = 'medium',
   backgroundColor,
   label,
+  className,
   ...props
 }: ButtonProps) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  const mode = primary ? styles['Button--primary'] : styles['Button--secondary'];
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+      style={{ backgroundColor }}
+      className={classNames([styles['Button'], styles[`Button--${size}`], mode, className])}
       {...props}
     >
       {label}
-      <style jsx>{`
-        button {
-          background-color: ${backgroundColor};
-        }
-      `}</style>
     </button>
   );
 };
+
+export default Button;
