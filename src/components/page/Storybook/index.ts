@@ -1,2 +1,1 @@
-import Storybook from './Storybook'
-export { Storybook as default };
+export { default } from './Storybook';
