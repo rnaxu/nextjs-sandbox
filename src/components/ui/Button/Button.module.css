@@ -1,4 +1,4 @@
-.Button {
+.root {
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
   border: 0;
@@ -8,28 +8,28 @@
   line-height: 1;
 }
 
-.Button--primary {
+.root-primary {
   color: white;
   background-color: #1ea7fd;
 }
 
-.Button--secondary {
+.root-secondary {
   color: #333;
   background-color: transparent;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
 }
 
-.Button--small {
+.root-small {
   font-size: 12px;
   padding: 10px 16px;
 }
 
-.Button--medium {
+.root-medium {
   font-size: 14px;
   padding: 11px 20px;
 }
 
-.Button--large {
+.root-large {
   font-size: 16px;
   padding: 12px 24px;
 }

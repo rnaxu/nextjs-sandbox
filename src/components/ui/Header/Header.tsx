@@ -14,9 +14,9 @@ type HeaderProps = {
 
 const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) => (
   <header>
-    <div className={styles.Header}>
+    <div className={styles.root}>
       <div>
-        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" className={styles['Header-logo']}>
+        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" className={styles.logo}>
           <g fill="none" fillRule="evenodd">
             <path
               d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z"
@@ -32,20 +32,20 @@ const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) => (
             />
           </g>
         </svg>
-        <h1 className={styles['Header-title']}>Acme</h1>
+        <h1 className={styles.title}>Acme</h1>
       </div>
       <div>
         {user ? (
           <>
-            <span className={styles['Header-welcome']}>
+            <span className={styles.welcome}>
               Welcome, <b>{user.name}</b>!
             </span>
-            <Button size="small" onClick={onLogout} label="Log out" className={styles['Header-button']} />
+            <Button size="small" onClick={onLogout} label="Log out" className={styles.button} />
           </>
         ) : (
           <>
-            <Button size="small" onClick={onLogin} label="Log in" className={styles['Header-button']} />
-            <Button primary size="small" onClick={onCreateAccount} label="Sign up" className={styles['Header-button']} />
+            <Button size="small" onClick={onLogin} label="Log in" className={styles.button} />
+            <Button primary size="small" onClick={onCreateAccount} label="Sign up" className={styles.button} />
           </>
         )}
       </div>

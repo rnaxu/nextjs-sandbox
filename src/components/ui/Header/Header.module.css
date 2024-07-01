@@ -1,4 +1,4 @@
-.Header {
+.root {
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 15px 20px;
@@ -7,12 +7,12 @@
   justify-content: space-between;
 }
 
-.Header-logo {
+.logo {
   display: inline-block;
   vertical-align: top;
 }
 
-.Header-title {
+.title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1;
@@ -21,11 +21,11 @@
   vertical-align: top;
 }
 
-.Header-button + .Header-button {
+.button + .button {
   margin-left: 10px;
 }
 
-.Header-welcome {
+.welcome {
   color: #333;
   font-size: 14px;
   margin-right: 10px;

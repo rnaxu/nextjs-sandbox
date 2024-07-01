@@ -39,12 +39,12 @@ const Button = ({
   className,
   ...props
 }: ButtonProps) => {
-  const mode = primary ? styles['Button--primary'] : styles['Button--secondary'];
+  const mode = primary ? styles['root-primary'] : styles['root-secondary'];
   return (
     <button
       type="button"
       style={{ backgroundColor }}
-      className={classNames([styles['Button'], styles[`Button--${size}`], mode, className])}
+      className={classNames([styles.root, styles[`root-${size}`], mode, className])}
       {...props}
     >
       {label}
