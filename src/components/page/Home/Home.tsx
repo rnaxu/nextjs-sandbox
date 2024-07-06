@@ -1,5 +1,5 @@
-import Image from "next/image";
-import styles from "./Home.module.css";
+import Image from 'next/image';
+import styles from './Home.module.css';
 
 const Home = () => {
   return (
@@ -15,7 +15,7 @@ const Home = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{" "}
+            By{' '}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -95,5 +95,3 @@ const Home = () => {
 };
 
 export default Home;
-
-

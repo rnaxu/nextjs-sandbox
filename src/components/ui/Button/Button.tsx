@@ -26,7 +26,7 @@ type ButtonProps = {
    * Optional click handler
    */
   onClick?: () => void;
-}
+};
 
 /**
  * Primary UI component for user interaction
@@ -44,7 +44,12 @@ const Button = ({
     <button
       type="button"
       style={{ backgroundColor }}
-      className={classNames([styles.root, styles[`root-${size}`], mode, className])}
+      className={classNames([
+        styles.root,
+        styles[`root-${size}`],
+        mode,
+        className,
+      ])}
       {...props}
     >
       {label}
