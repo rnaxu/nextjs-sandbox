@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Header  from '@/components/ui/Header/Header';
+import Header  from '@/components/model/user/Header/Header';
 import styles from './Storybook.module.css';
 
 type User = {
