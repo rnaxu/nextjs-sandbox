@@ -40,7 +40,7 @@ const Page = () => {
         <ul className={styles.items}>
           <li className={styles.item}>
             Use a higher-level connected component. Storybook helps you compose
-            such data from the "args" of child component stories
+            such data from the &quot;args&quot; of child component stories
           </li>
           <li className={styles.item}>
             Assemble data in the page component from your services. You can mock
