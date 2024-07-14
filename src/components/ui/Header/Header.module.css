@@ -1,0 +1,9 @@
+.root {
+  padding: 16px;
+}
+
+.items {
+  display: flex;
+  gap: 8px;
+  list-style-type: none;
+}
