@@ -7,7 +7,8 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepare": "husky"
   },
   "dependencies": {
     "classnames": "2.5.1",
@@ -31,6 +32,8 @@
     "eslint-config-next": "14.2.4",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-storybook": "0.8.0",
+    "husky": "9.0.11",
+    "lint-staged": "15.2.7",
     "prettier": "3.3.2",
     "storybook": "8.1.11",
     "stylelint": "16.6.1",
