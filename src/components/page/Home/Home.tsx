@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from './Home.module.css';
 
 const Home = () => {
@@ -90,6 +91,11 @@ const Home = () => {
           </p>
         </a>
       </div>
+      <ul>
+        <li>
+          <Link href="/storybook">Storybook</Link>
+        </li>
+      </ul>
     </main>
   );
 };
