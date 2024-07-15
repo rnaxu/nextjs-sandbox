@@ -1,6 +1,6 @@
+import classNames from 'classnames';
 import Link from 'next/link';
 import styles from './Header.module.css';
-import classNames from 'classnames';
 
 const ITEMS = [
   {
@@ -28,11 +28,6 @@ const ITEMS = [
     name: 'D',
   },
 ] as const;
-
-type Item = {
-  url: string;
-  name: string;
-};
 
 type HeaderProps = {
   className?: string;

@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import Header from '@/components/ui/Header';
 import styles from './Home.module.css';
 

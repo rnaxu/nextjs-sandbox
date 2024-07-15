@@ -1,14 +1,7 @@
-import { useState } from 'react';
 import Header from '@/components/ui/Header';
 import styles from './Storybook.module.css';
 
-type User = {
-  name: string;
-};
-
 const Page = () => {
-  const [user, setUser] = useState<User>();
-
   return (
     <article>
       <Header />
