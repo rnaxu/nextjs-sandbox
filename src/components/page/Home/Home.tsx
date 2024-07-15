@@ -1,11 +1,9 @@
 import Image from 'next/image';
-import Header from '@/components/ui/Header';
 import styles from './Home.module.css';
 
 const Home = () => {
   return (
     <>
-      <Header />
       <main className={styles.main}>
         <div className={styles.description}>
           <p>

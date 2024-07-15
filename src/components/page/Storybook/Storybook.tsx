@@ -1,11 +1,8 @@
-import Header from '@/components/ui/Header';
 import styles from './Storybook.module.css';
 
 const Page = () => {
   return (
     <article>
-      <Header />
-
       <section className={styles.root}>
         <h2 className={styles.title}>Pages in Storybook</h2>
         <p className={styles.description}>
