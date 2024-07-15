@@ -3,5 +3,39 @@
     "next/core-web-vitals",
     "plugin:storybook/recommended",
     "prettier"
-  ]
+  ],
+  "plugins": ["import"],
+  "rules": {
+    "react/self-closing-comp": [
+      "error",
+      {
+        "component": true,
+        "html": true
+      }
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "pathGroups": [
+          {
+            "pattern": "./*.css",
+            "group": "sibling",
+            "position": "after"
+          }
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": false
+        }
+      }
+    ]
+  }
 }
