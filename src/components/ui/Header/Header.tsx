@@ -15,26 +15,32 @@ const ITEMS = [
     url: '/b',
     name: 'B',
   },
+  {
+    url: '/c',
+    name: 'C（Redirect to Home）',
+  },
 ] as const;
 
 type HeaderProps = {
   className?: string;
 };
 
-const Header = ({ className }: HeaderProps) => (
-  <header className={classNames(styles.root, className)}>
-    <nav>
-      <ul className={styles.items}>
-        {ITEMS.map((item) => {
-          return (
-            <li key={item.name}>
-              <Link href={item.url}>{item.name}</Link>
-            </li>
-          );
-        })}
-      </ul>
-    </nav>
-  </header>
-);
+const Header = ({ className }: HeaderProps) => {
+  return (
+    <header className={classNames(styles.root, className)}>
+      <nav>
+        <ul className={styles.items}>
+          {ITEMS.map((item) => {
+            return (
+              <li key={item.name}>
+                <Link href={item.url}>{item.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+    </header>
+  );
+};
 
 export default Header;
