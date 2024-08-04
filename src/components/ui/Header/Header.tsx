@@ -13,11 +13,11 @@ const ITEMS = [
   },
   {
     url: '/b',
-    name: 'B（With fetch）',
+    name: 'B (With fetch)',
   },
   {
     url: '/c',
-    name: 'C（Redirect to Home）',
+    name: 'C (Redirect to Home)',
   },
 ] as const;
 
@@ -32,7 +32,7 @@ const Header = ({ className }: HeaderProps) => {
         <ul className={styles.items}>
           {ITEMS.map((item) => {
             return (
-              <li key={item.name}>
+              <li key={item.name} className={styles.item}>
                 <Link href={item.url}>{item.name}</Link>
               </li>
             );

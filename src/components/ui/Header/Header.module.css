@@ -5,6 +5,20 @@
 .items {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 16px;
   list-style-type: none;
+}
+
+.item:hover {
+  text-decoration: underline;
+}
+
+.item + .item::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 16px;
+  width: 1px;
+  height: 1em;
+  background-color: currentcolor;
 }
