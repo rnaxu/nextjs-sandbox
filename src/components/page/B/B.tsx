@@ -1,10 +1,15 @@
 import styles from './B.module.css';
 
-const B = () => {
+type BProps = {
+  message: string;
+};
+
+const B = ({ message }: BProps) => {
   return (
-    <main className={styles.main}>
+    <>
       <h1>Page B</h1>
-    </main>
+      <p className={styles.message}>{message}</p>
+    </>
   );
 };
 

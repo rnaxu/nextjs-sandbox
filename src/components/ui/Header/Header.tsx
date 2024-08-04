@@ -13,7 +13,7 @@ const ITEMS = [
   },
   {
     url: '/b',
-    name: 'B',
+    name: 'B（With fetch）',
   },
   {
     url: '/c',

@@ -1,11 +1,5 @@
-import styles from './A.module.css';
-
 const A = () => {
-  return (
-    <main className={styles.main}>
-      <h1>Page A</h1>
-    </main>
-  );
+  return <h1>Page A</h1>;
 };
 
 export default A;
