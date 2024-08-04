@@ -8,24 +8,12 @@ const ITEMS = [
     name: 'Home',
   },
   {
-    url: '/storybook',
-    name: 'Storybook',
-  },
-  {
     url: '/a',
     name: 'A',
   },
   {
     url: '/b',
     name: 'B',
-  },
-  {
-    url: '/c',
-    name: 'C',
-  },
-  {
-    url: '/d',
-    name: 'D',
   },
 ] as const;
 
